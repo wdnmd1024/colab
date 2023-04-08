@@ -49,14 +49,14 @@ class DIV2K(Dataset):  # for training/testing
         if split == 'train':
             # self.LR_dir = os.path.join('./DIV2K/DIV2K_train_LR_bicubic', 'X'+str(SR_rate))
             # self.HR_dir = './DIV2K/DIV2K_train_HR'
-            self.LR_dir = '/content/SR/DIV2K_train_LR_bicubic/X4'
-            self.HR_dir = '/content/SR/DIV2K_train_HR'
+            self.LR_dir = '/content/colab/SR/DIV2K_train_LR_bicubic/X4'
+            self.HR_dir = '/content/colab/SR/DIV2K_train_HR'
             self.img_names = sorted(os.listdir(self.HR_dir))[:792]
         elif split == 'valid':
             # self.LR_dir = os.path.join('./DIV2K/DIV2K_train_LR_bicubic', 'X' + str(SR_rate))
             # self.HR_dir = './DIV2K/DIV2K_train_HR'
-            self.LR_dir = '/content/SR/DIV2K_train_LR_bicubic/X4'
-            self.HR_dir = '/content/SR/DIV2K_train_HR'
+            self.LR_dir = '/content/colab/SR/DIV2K_train_LR_bicubic/X4'
+            self.HR_dir = '/content/colab/SR/DIV2K_train_HR'
             self.img_names = sorted(os.listdir(self.HR_dir))[792:]
         elif split == 'test':
             # self.LR_dir = os.path.join('./DIV2K/DIV2K_valid_LR_bicubic', 'X'+str(SR_rate))
